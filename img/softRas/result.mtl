@@ -1,0 +1,7 @@
+newmtl tex
+Ka 1.0000 1.0000 1.0000
+Kd 1.0000 1.0000 1.0000
+Ks 0.0000 0.0000 0.0000
+d 1.0
+illum 0
+map_Kd ./canonical_image.png

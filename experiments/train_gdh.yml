@@ -1,0 +1,33 @@
+## train gdh test 2020.06.22
+## trainer
+run_train: true
+num_epochs: 100
+batch_size: 8
+checkpoint_dir: results/gdh_test
+save_checkpoint_freq: 1
+keep_num_checkpoint: 2
+resume: true
+use_logger: true
+log_freq: 500
+
+## dataloader
+num_workers: 1
+image_size: 64
+load_gt_depth: false
+train_val_data_dir: data/gdh
+
+## model
+model_name: unsup3d_gdh_test
+min_depth: 0.9
+max_depth: 1.1
+xyz_rotation_range: 60  # (-r,r) in degrees
+xy_translation_range: 0.1  # (-t,t) in 3D
+z_translation_range: 0  # (-t,t) in 3D
+lam_perc: 1             # 默认应该为1.
+lam_flip: 0.5           # 默认应该为0.5.
+lr: 0.0001
+
+## renderer
+rot_center_depth: 1.0
+fov: 10  # in degrees
+tex_cube_size: 2
