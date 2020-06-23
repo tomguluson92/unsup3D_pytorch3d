@@ -121,7 +121,6 @@ def get_textures_from_im(im, tx_size=1):
         textures = textures.view(b, c, -1)
         textures = F.interpolate(textures, h * w)
         textures = textures.reshape(b, -1, c)
-        print("纹理2", textures.shape)
     else:
         raise NotImplementedError("Currently support texture size of 1 or 2 only.")
     return textures
