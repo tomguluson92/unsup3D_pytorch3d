@@ -74,11 +74,11 @@ class Renderer(nn.Module):
         ## todo: define Renderer.
         ## use renderer from pytorch3d.
         # fixme: znear and zfar is equivalent to the neural renderer default settings.
-        # cameras = OpenGLOrthographicCameras(device=self.device, R=R, T=t, znear=0.01, zfar=100)
-        cameras = OpenGLPerspectiveCameras(device=self.device, R=R, T=t,
-                                           znear=self.renderer_min_depth,
-                                           zfar=self.renderer_max_depth,
-                                           fov=self.fov)
+        cameras = OpenGLOrthographicCameras(device=self.device, R=R, T=t, znear=0.01, zfar=100)
+        # cameras = OpenGLPerspectiveCameras(device=self.device, R=R, T=t,
+        #                                   znear=self.renderer_min_depth,
+        #                                   zfar=self.renderer_max_depth,
+        #                                   fov=self.fov)
 
         raster_settings = PointsRasterizationSettings(
             image_size=self.image_size,
