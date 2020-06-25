@@ -15,15 +15,11 @@ In order to compatible with the pytorch3d API, we change a little bit in `unsup3
 
 However, the effect of this implemention is not good. I will still work on this and try to fix that problem.
 
-**neural renderer**
-
-<img src="./img/softRas/input_image.png">
-
-<img src="./img/neural_renderer/nr.png">
-
 **SoftRas**
 
 <img src="./img/softRas/nr.png">
+
+<img src="./img/softRas/nr3d.png">
 
 
 ## ① Setup (with [Anaconda](https://www.anaconda.com/))
