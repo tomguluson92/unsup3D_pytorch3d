@@ -15,7 +15,7 @@ In order to compatible with the pytorch3d API, we change a little bit in `unsup3
 
 However, the effect of this implemention is not good. I will still work on this and try to fix that problem.
 
-**SoftRas**
+**SoftRas**(trained on celebA)
 
 <img src="./img/softRas/nr.png">
 
